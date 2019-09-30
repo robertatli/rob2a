@@ -59,6 +59,8 @@ task main()
 
 	for(int i = 1; i<6;i++){
 		drivedist(true,wheelTurns);
+		stopMotor();
+		drivedist(false,wheelTurns);
 		wheelTurns = wheelTurns*2
 	}
 
