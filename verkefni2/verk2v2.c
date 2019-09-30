@@ -61,7 +61,7 @@ task main()
 		drivedist(true,wheelTurns);
 		stopMotor();
 		drivedist(false,wheelTurns);
-		wheelTurns = wheelTurns*2
+		wheelTurns += wheelTurns
 	}
 
 
