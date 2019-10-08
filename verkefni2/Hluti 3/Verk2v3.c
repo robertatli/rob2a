@@ -32,45 +32,32 @@ void stopMotor(){
 	wait1Msec(1000);
 }
 
-void rotateLeft(int dir, int degreesToTurn){
-	resetSensorValue();
-	while(abs(SensorValue[leftEncoder]) < 200){
-		motor[rightMotor] = TURN_POWER*dir;
-		motor[leftMotor] = TURN_POWER*(-dir);
-	}
-}
 
-void rotateRight(int dir, int degreesToTurn){
+
+void rotate(int dir, int degreesToTurn){
 	resetSensorValue();
-	while(abs(SensorValue[leftEncoder]) < 200){
+	while(abs(SensorValue[leftEncoder]) < 200){ //ef dir er true => turn right, ef fale => turn left
 		motor[leftMotor] = TURN_POWER*dir;
-		motor[rightMotor] = TURN_POWER*(-dir);
+		motor[rightMotor] = TURN_POWER*-(dir);
 	}
 }
 
-void driveForward50(int dir, int degreesToTurn){
+void driveForward50(int degreesToTurn){
 	resetSensorValue();
 	while(SensorValue[leftEncoder] < degreesToTurn)  // While less than 50 cm
 	{
-			motor[rightMotor] = FULL_POWER*dir;
-			motor[leftMotor] = FULL_POWER*dir;
+			motor[rightMotor] = FULL_POWER;
+			motor[leftMotor] = FULL_POWER;
 	}
 	stopMotor();
 }
 
-void driveturn(int drivetime,bool b_f, bool turnLeft, int degreesToTurn){
+void driveturn(int drivetime,bool b_f, int degreesToTurn){
 	int dir = (b_f)? (1):(-1);
-	if(turnLeft){
-			driveForward50(dir, degreesToTurn);
-			wait1Msec(drivetime);
-			rotateLeft(dir,degreesToTurn);
-		}
-		else if(!turnLeft){
-			driveForward50(dir, degreesToTurn);
-			wait1Msec(drivetime);
-			rotateRight(dir,degreesToTurn);
-		}
-		wait1Msec(drivetime);
+	driveForward50(degreesToTurn);
+	wait1Msec(drivetime);
+	rotate(dir,degreesToTurn);
+	wait1Msec(drivetime);
 }
 
 //+++++++++++++++++++++++++++++++++++++++++++++| MAIN |+++++++++++++++++++++++++++++++++++++++++++++++
@@ -88,23 +75,23 @@ task main()
 
 	driveturn(BASE_TIME,true, true,degreesToTurn); 	// right
 	for(int i= 0; i < 2; i++){
-		driveturn(BASE_TIME,true, false,degreesToTurn); // left
+		driveturn(BASE_TIME, false,degreesToTurn); // left
 	}
 	for(int i = 0; i< 2;i++){
-		driveturn(BASE_TIME,true, true,degreesToTurn); 	// right
+		driveturn(BASE_TIME, true,degreesToTurn); 	// right
 	}
-	driveturn(BASE_TIME,true, false,degreesToTurn); // left
+	driveturn(BASE_TIME, false,degreesToTurn); // left
 	for(int i = 0; i< 2;i++){
-		driveturn(BASE_TIME,true, true,degreesToTurn); 	// right
+		driveturn(BASE_TIME, true,degreesToTurn); 	// right
 	}
-	driveturn(BASE_TIME,true, false,degreesToTurn); // left
+	driveturn(BASE_TIME, false,degreesToTurn); // left
 	for(int i = 0; i< 2;i++){
-		driveturn(BASE_TIME,true, true,degreesToTurn); 	// right
+		driveturn(BASE_TIME, true,degreesToTurn); 	// right
 	}
 	for(int i= 0; i < 2; i++){
-		driveturn(BASE_TIME,true, false,degreesToTurn); // left
+		driveturn(BASE_TIME, false,degreesToTurn); // left
 	}
-	driveturn(BASE_TIME,true, true,degreesToTurn); 	// right
+	driveturn(BASE_TIME, true,degreesToTurn); 	// right
 
 }
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
