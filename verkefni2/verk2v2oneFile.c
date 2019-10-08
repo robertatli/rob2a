@@ -60,6 +60,5 @@ task main()
 		wait10Msec(1);
 		drivedist(false,wheelTurns);
 		wheelTurns += wheelTurns;
-		//printf(wheelTurns);
 	}
 
