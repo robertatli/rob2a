@@ -15,6 +15,8 @@ Nýtið ykkur Sample program- Shaft encoder- Forward for distance
 Notið while lúppu búið til fall void drive(int dist){}
 Gerið sauðakóða sem textaskjal með C kóðanum og flæðirit áður en þið forritið og skilið í Innu
 Athugið að þið þurfið að reikna ummál hjóls og sýna í commenti.  Gerið flæðiritið í http://draw.io þegar búið farið í  File-export as - image
+![Mynd af verkefni 2 hluti c](/verkefni2/Hluti%202/Robotc%20V2v2%20flowchart.png)
+
 ##  3. Hluti 50 stig af 100
 Forritið robot þannig að hann leysi þraut sem er á mynd fyrir neðan.
 Notið shaft-encoder, munið hér þurfið þið að kenna robot að snúa 90° þ.e búa til fall void turn(int deg){} og void drive(int dist){}
