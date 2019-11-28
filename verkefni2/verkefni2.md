@@ -30,7 +30,7 @@ Skilið vido af vélmenni leysa allar þrautinar setjið á YouTube og geymið �
 ![](https://github.com/robertatli/rob2a/blob/master/verkefni2/Hluti%201/v2v1.png?raw=true)
 
 # hluti 2
-![](https://github.com/robertatli/rob2a/blob/master/verkefni2/Hluti%202/Robotc%20V2v2%20flowchart.png)
+![](https://github.com/robertatli/rob2a/blob/master/verkefni2/Hluti%202/Robotc%20V2v2%20flowchart.png?raw=true)
 
 # hluti 3
-![](https://github.com/robertatli/rob2a/blob/master/verkefni2/Hluti%203/verkefni2c.png)
+![](https://github.com/robertatli/rob2a/blob/master/verkefni2/Hluti%203/verkefni2c.png?raw=true)
