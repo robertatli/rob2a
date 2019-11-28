@@ -25,3 +25,12 @@ Gerið flæðiritið í [Draw.io](http://draw.io) þegar búið farið í  File-
 Skilið vido af vélmenni leysa allar þrautinar setjið á YouTube og geymið í ykkar repository og skilið slóð á videóið í Innu.
 
 ![Mynd af verkefni 2 hluti c](/verkefni2/verkefni2.png)
+
+# hluti 1
+![](https://github.com/robertatli/rob2a/blob/master/verkefni2/Hluti%201/v2v1.png)
+
+# hluti 2
+![](https://github.com/robertatli/rob2a/blob/master/verkefni2/Hluti%202/Robotc%20V2v2%20flowchart.png)
+
+# hluti 3
+![](https://github.com/robertatli/rob2a/blob/master/verkefni2/Hluti%203/verkefni2c.png)
