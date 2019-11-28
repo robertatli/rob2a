@@ -8,4 +8,4 @@ Skilið sauðakóða og flæðiriti https://www.draw.io/
 Skoðið vel: Sample Program- light Sensor og Ultrasonic Range Module
 Notið heimasíðu okkar og lesið vel allt efni hér: http://www.education.rec.ri.cmu.edu/previews/robot_c_products/teaching_rc_cortex_v2/?_ga=1.245411399.2101105766.1426592875
 
-![asdf](https://github.com/robertatli/rob2a/blob/master/verkefni4/Flowchart.png)
+![asdf](https://github.com/robertatli/rob2a/blob/master/verkefni4/Flowchart.png?raw=true)
