@@ -14,7 +14,7 @@ Einnig eru til í sample program Remote Control  kóðar sem hjálpa ykkur
 Gangi ykkur vel!
 
 # hluti 1
-![](https://github.com/robertatli/rob2a/blob/master/verkefni3/Hluti%201/verk3hl1.png)
+![](https://github.com/robertatli/rob2a/blob/master/verkefni3/Hluti%201/verk3hl1.png?raw=true)
 
 # hluti 2
-![](https://github.com/robertatli/rob2a/blob/master/verkefni3/Hluti2/verk3hl2.png)
+![](https://github.com/robertatli/rob2a/blob/master/verkefni3/Hluti2/verk3hl2.png?raw=true)
